@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   # verb "path", to: "controller#action"
   get 'tasks', to: 'tasks#index'
+  get 'tasks/new', to: 'tasks#new'
+  get 'tasks/:id', to: 'tasks#show', as: :task
+
 end
